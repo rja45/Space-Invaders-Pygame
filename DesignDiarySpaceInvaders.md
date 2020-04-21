@@ -5,9 +5,9 @@ with the final product of my last assignment. On the first day, I decided to go 
 YouTube tutorial about the given game code so I would have an understanding of the basic game features
 for me to expand upon. I decided that a fun version of this game would be one with multiple bullets per screen
 and different firing modes. Once I implemented this, I found that the game was no longer challenging; I could
-easily slaughter all of the enemies by just pressing and holding the fire button is auto firing mode. So, I 
-decided the next step would be to make an accuracy counter to keep track of how many bullets the player effectively
-uses. From this point, I found that the game was not very fun since I could not easily loop back and play another
+easily slaughter all of the enemies by just pressing and holding the fire button in auto firing mode. So, I 
+decided the next step would be to make an accuracy counter to keep track of how many bullets hit their target.
+From this point, I found that the game was not very fun since I could not easily loop back and play another
 round from the game-over screen. I decided to add a main menu to give the game screen something to loop-back
 to after a game is finished. At this point, I was getting tired of hearing the background music playing and I was
 also sick of commenting/uncommenting the audio code to make it mute, so I decided to add mute/unmute hotkeys for
