@@ -28,6 +28,9 @@ over_font = pygame.font.Font('freesansbold.ttf', 64)
 # Surrendered
 surrendered_font = pygame.font.Font('freesansbold.ttf', 54)
 
+def game_delay():
+    pygame.time.wait(10)
+
 
 def game_over_text():
     over_text = over_font.render("GAME OVER", True, (255, 255, 255))
@@ -52,6 +55,7 @@ def menu():
     mixer.music.play(-1)
     # display main menu
     while True:
+        game_delay()
         title = pygame.image.load("space-invaders.png")
         background_rect = background.get_rect()
 
@@ -89,6 +93,7 @@ def menu():
 # Pause Screen
 
 def paused():
+
     # display paused screen
 
     title = pygame.image.load("space-invaders.png")
@@ -108,6 +113,7 @@ def paused():
     loop = True
 
     while loop:
+        game_delay()
         event = pygame.event.poll()
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_SPACE:
@@ -128,6 +134,7 @@ def paused():
 
 
 def play_game():
+
 
     # Sound
 
@@ -256,6 +263,7 @@ def play_game():
 
     running = True
     while running:
+        game_delay()
 
         # RGB = Red, Green, Blue
         screen.fill((0, 0, 0))
